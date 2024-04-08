@@ -52,9 +52,14 @@ a {
 /*--------------------------------------------*/
 
 body {
-    margin: 0 16px 100px 16px;
     background-color: #FFFDFA;
     font-family: "Inter", sans-serif;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 header {
@@ -87,7 +92,7 @@ p {
 main {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 70px;
 }
 
 h1, h3 {
@@ -98,7 +103,7 @@ h1 {
     font-weight: 800;
 }
 
-h2 {
+.main-container2 h2 {
     font-weight: 700;
     font-size: 32px;
     line-height: 32px;
@@ -107,13 +112,13 @@ h2 {
 
 .image-header {
     width: 100%;
-    height: 100%;
 }
 
 .main-container1 {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    
 }
 
 .c1, .c2 {
@@ -123,39 +128,41 @@ h2 {
 }
 
 .c2 {
-    justify-content: space-between;
+    
 }
 
 .main-container2 {
     background-color: #00001A;
-    padding: 30px 30px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .main-container2 article {
     color: white;
+
 }
 
 .main-container2 h1 {
     font-weight: 700;
-}
-
-.main-container2 h2 {
-    margin-bottom: 40px;
-}
-
-article p {
-    color: #C5C6CE;
-}
-
-article h1 {
     color: white;
     font-size: 20px;
     line-height: 24px;
     margin: 10px 0;
 }
 
+.main-container2 h2 {
+    /* margin-bottom: 40px; */
+}
+
+article p {
+    color: #C5C6CE;
+}
+
 .c1 h1 {
     font-size: 40px;
+    
 }
 
 .c2 a {
@@ -181,13 +188,51 @@ a, p {
 }
 
 hr {
-    margin: 40px 0;
+    order: 1px solid #5E607A;
+    /* margin: 30px 0; */
+}
+
+section {
+    margin: 70px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    gap: 40px;
+}
+
+section img {
+    width: 100px;
+    height: 127px;
+}
+
+section article {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+}
+
+section h1 {
+    font-size: 32px;
+    color: #C5C6CE;
+}
+
+section h2 {
+    font-size: 18px;
+    font-weight: 800; 
+}
+
+section p {
+    color: #5E607A;
+}
+
+section div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 @media screen and (min-width: 769px) {
-    body {
-        margin: 0 165px;
-    }
 
 
     nav {
@@ -199,24 +244,19 @@ hr {
     }
 
     ul {
-        width: 25vw;
         flex-direction: row;
         justify-content: space-between;
         font-size: 15px;
+        gap: 40px;
     }
 
     main {
         flex-direction: row;
         gap: 35px;
-        max-height: 65vh;
     }
 
     header {
         margin: 10vh 0;
-    }
-
-    .image-header {
-        max-width: 100%;
     }
 
     .c1 {
@@ -238,7 +278,7 @@ hr {
 
     .main-container1 {
         max-width: 65%;
-        height: 60%;
+
     }
 
     .maint-container2 {
@@ -248,5 +288,14 @@ hr {
     .image {
         height: 300px;
         overflow: hidden;
+    }
+
+    section {
+        flex-direction: row;
+    }
+
+    section img {
+        width: 100px;
+        height: 127px;
     }
 }
