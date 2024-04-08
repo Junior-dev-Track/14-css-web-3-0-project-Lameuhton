@@ -52,7 +52,7 @@ a {
 /*--------------------------------------------*/
 
 body {
-    margin: 0 5vw;
+    margin: 0 16px 100px 16px;
     background-color: #FFFDFA;
     font-family: "Inter", sans-serif;
 }
@@ -61,7 +61,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 6vh 0;
+    margin: 28px 0;
 }
 
 nav {
@@ -74,10 +74,35 @@ ul {
     flex-direction: column;
 }
 
+.logo {
+    width: 44.98px;
+    height: 28px;
+}
+
+p {
+    line-height: 26px;
+    font-size: 15px;
+}
+
 main {
     display: flex;
     flex-direction: column;
     gap: 50px;
+}
+
+h1, h3 {
+    color: #00001A;
+}
+
+h1 {
+    font-weight: 800;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: #E9AA52;
 }
 
 .image-header {
@@ -102,23 +127,61 @@ main {
 }
 
 .main-container2 {
-    background-color: black;
+    background-color: #00001A;
+    padding: 30px 30px;
 }
 
 .main-container2 article {
     color: white;
 }
 
-.main-container2 h2 {
-    color: #E9AA52;
+.main-container2 h1 {
+    font-weight: 700;
 }
 
-.main-container1 p{
-    font-size: 15px;
+.main-container2 h2 {
+    margin-bottom: 40px;
+}
+
+article p {
+    color: #C5C6CE;
+}
+
+article h1 {
+    color: white;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 10px 0;
 }
 
 .c1 h1 {
     font-size: 40px;
+}
+
+.c2 a {
+    height: 48px;
+    width: 182px;
+    color: #FFFDFA;
+}
+
+button {
+    height: 100%;
+    width: 100%;
+    background-color: #F15D51;
+    border-style: none;
+    font-size: 14px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #FFFDFA;
+}
+
+a, p {
+    color: #5E607A;
+}
+
+hr {
+    margin: 40px 0;
 }
 
 @media screen and (min-width: 769px) {
@@ -167,6 +230,10 @@ main {
 
     .c1 h1 {
         font-size: 56px;
+    }
+
+    .c1 h2 {
+        font-size: 40px;
     }
 
     .main-container1 {
